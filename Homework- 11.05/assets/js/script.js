@@ -18,13 +18,16 @@ $(document).ready(function () {
             <li">${user.phone} </li>
             <li>${user.gender} </li>`
             $("#personlaData").append(result)
+            sessionStorage.setItem("userInfo", JSON.stringify(user))
             return logInData
         })
         .then(
             res => {
                 $(".loginbtn").click(function () {
                     if ($("#usrPass").val().toLowerCase() == res.pass.toLowerCase() && $("#usrName").val().toLowerCase() == res.userName.toLowerCase()) {
+
                         window.location = "file:///C:/Users/OMEN/Desktop/Homework-%20May%2011/11-05-2021-Sevda-HHH/Homework-%2011.05/index.html"
+
                     }
                 })
                 var passs = $("#usrPass").val()
