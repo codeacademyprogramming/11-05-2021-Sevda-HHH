@@ -1,0 +1,14 @@
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    #profile {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
